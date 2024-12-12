@@ -1,0 +1,239 @@
+/*
+Theme Name: Talking Minds
+Text Domain: talking-minds
+Version: 1.1.7
+Description: Talking Minds - Psychotherapist WordPress Theme
+Tags: blog, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, sticky-post, theme-options, translation-ready, block-styles, accessibility-ready
+Author: rayoflightthemes.com
+Author URI: rayoflightthemes.com
+Theme URI: https://themeforest.net/user/rayoflightt
+License: https://themeforest.net/
+License URI: https://themeforest.net/
+
+**/
+
+/* for white logo page template */
+.white-nav.white-nav-none {
+  display: none!important;
+} 
+.white-nav.white-nav-none.navbarscroll {
+  display: block!important;
+}
+@media all and (max-width: 992px) {
+.white-nav.transparent-nav {
+  background: #333333!important;
+}	
+.white-nav.transparent-nav .navbar .navbar-nav > li > a:link,
+.white-nav.transparent-nav .navbar .navbar-nav > li > a:visited {
+  color: #fff!important;
+}	
+}	
+@media all and (max-width: 991px) {
+
+.white-nav.transparent-nav a {
+  color: #fff!important;
+}	
+}	
+
+select{
+  background: #fff url("assets/images/chevron-down.png") 99% 50% no-repeat;
+	background-image: url("assets/images/chevron-down.png") 99% 50% no-repeat;
+}
+select {
+  background: #fff url("assets/images/chevron-down.png") 99% 50% no-repeat;
+	background-image: url("assets/images/chevron-down.png") 99% 50% no-repeat;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("assets/images/chevron-down.png") 99% 50% no-repeat;
+}
+select:focus {
+  box-shadow: 0;
+}
+.wp-caption p {
+  margin: 10px!important;
+}
+.wp-caption p:empty:before {
+ content:""!important;
+}
+@media all and (max-width: 992px) {
+.pagespace-archive3 .sidebar {
+ margin-top: 56px;margin-bottom: -56px;
+}
+}
+/* fix for admin bar overlap */
+@media all and (min-width: 992px) {
+body.logged-in .white-nav,
+body.logged-in .white-nav.navbarscroll { 
+  top: 28px!important; 
+}
+}
+
+.innerpages-title-wrapper .breadcrumb1 span:nth-child(1) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* new videobutton */
+.videobutton2-wrapper {
+  text-align: center;
+	cursor: pointer;
+}
+.videobutton2 {
+  display: inline-block;
+  padding-top: 45px;
+  padding-left: 10px;
+  width: 140px;
+  height: 140px;
+  background: #F4FCFA;
+  background: #FEF3DE;
+  border-radius: 500px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.videobutton2:hover {
+  background: #26ABA3;
+}
+.videobutton2 i {
+  font-size: 50px;
+  color: #F7AB1E;
+}
+.videobutton2:hover i {
+  color: #fff;
+}
+@media all and (max-width: 992px) {
+	.videobutton2 {
+    display: inline-block;
+    padding-top: 33px;
+    padding-left: 8px;
+    width: 100px;
+    height: 100px;
+  }
+	.videobutton2 i {
+		font-size: 32px;
+  }
+}
+
+
+/*** programs 2 cpt with flexbox ***/
+.programs2 {
+	display: flex;
+	align-content: stretch;
+	flex-flow: row wrap;
+	gap: 2rem;
+}
+.programs2 .icon-box1-wrapper {
+  flex-basis: calc(33% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns4 {
+  flex-basis: calc(25% - 2rem);
+	padding: 30px;
+}	
+.programs2 .icon-box1-wrapper.columns5 {
+  flex-basis: calc(20% - 2rem);
+	padding: 20px;
+}	
+.programs2 .icon-box1-wrapper.columns6 {
+  flex-basis: calc(16% - 2rem);
+	padding: 10px!important;
+}
+.programs2 .icon-box1-wrapper.columns2 {
+  flex-basis: calc(50% - 2rem);
+}
+.programs2 .icon-box1-wrapper.columns1 {
+  flex-basis: calc(100% - 2rem);
+}
+
+
+@media all and (max-width: 1200px) {		
+.programs2 .icon-box1-wrapper.columns5 {
+  flex-basis: calc(25% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns6 {
+  flex-basis: calc(25% - 2rem);
+}
+}
+
+
+@media all and (max-width: 992px) {	
+.programs2 {
+	justify-content: center;
+}
+
+.programs2 .icon-box1-wrapper {
+  padding: 20px;
+}
+
+.programs2 .icon-box1-wrapper {
+  flex-basis: calc(50% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns4 {
+  flex-basis: calc(50% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns5 {
+  flex-basis: calc(50% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns6 {
+  flex-basis: calc(50% - 2rem);
+	padding: 20px!important;
+}
+.programs2 .icon-box1-wrapper.columns2 {
+  flex-basis: calc(50% - 2rem);
+}
+.programs2 .icon-box1-wrapper.columns1 {
+  flex-basis: calc(100% - 2rem);
+}
+}
+
+@media all and (max-width: 767px) {	
+.programs2 .icon-box1-wrapper {
+  flex-basis: calc(100% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns4 {
+  flex-basis: calc(100% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns5 {
+  flex-basis: calc(100% - 2rem);
+}	
+.programs2 .icon-box1-wrapper.columns6 {
+  flex-basis: calc(100% - 2rem);
+}
+.programs2 .icon-box1-wrapper.columns2 {
+  flex-basis: calc(100% - 2rem);
+}
+.programs2 .icon-box1-wrapper.columns1 {
+  flex-basis: calc(100% - 2rem);
+}
+}
+
+
+
+/* tiny slider navigation */
+.tns-outer button {
+  visibility: hidden;
+	display: none;
+}
+.tns-outer .tns-nav button {
+  visibility: hidden;	
+}
+.tns-nav {
+  margin: 10px 0;
+	text-align: center;
+}
+.tns-nav > [aria-controls] {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #333333;
+  border: 0;
+}
+.tns-nav > .tns-nav-active { 
+  background: #999;
+	cursor: default; 
+}
+
+
